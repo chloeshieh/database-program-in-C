@@ -1,0 +1,140 @@
+Last login: Thu Apr  2 23:58:54 on ttys002
+/Users/yixin/.zshrc:source:128: no such file or directory: /Users/yixin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+➜  cps5310_yixin_xie git:(master) ✗ cd ~/Desktop/CS402_Lab1-3/402_Lab\#1/solution_0403                                                                                     cps5310_yixin_xiegit:(master) ✗ 
+➜  solution_0403 gcc readfile.c                                                                                                                                                               solution_0403
+In file included from readfile.c:4:
+./readfile.h:79:24: warning: sizeof on array function parameter will return size of 'struct person *' instead of 'struct person [1024]' [-Wsizeof-array-argument]
+    int length = sizeof(employee)/ sizeof(employee[0]);
+                       ^
+./readfile.h:76:33: note: declared here
+int print_by_name(struct person employee[1024], char emp_name[256]){
+                                ^
+./readfile.h:79:34: warning: 'sizeof (employee)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+    int length = sizeof(employee)/ sizeof(employee[0]);
+                 ~~~~~~~~~~~~~~~~^
+readfile.c:29:57: warning: format specifies type 'char *' but the argument has type 'char (*)[64]' [-Wformat]
+        fscanf(fp,"%d %s %s %d\n", &employee[n_emp].id, &employee[n_emp].name, &employee[n_emp].surname, &employee[n_emp].salary);
+                      ~~                                ^~~~~~~~~~~~~~~~~~~~~
+readfile.c:29:80: warning: format specifies type 'char *' but the argument has type 'char (*)[64]' [-Wformat]
+        fscanf(fp,"%d %s %s %d\n", &employee[n_emp].id, &employee[n_emp].name, &employee[n_emp].surname, &employee[n_emp].salary);
+                         ~~                                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+readfile.c:68:26: warning: format specifies type 'char *' but the argument has type 'char (*)[64]' [-Wformat]
+            scanf(" %s", &surname);
+                    ~~   ^~~~~~~~
+5 warnings generated.
+➜  solution_0403 ./a.out input.txt                                                                                                                                                            solution_0403
+**********************************
+Employee DB Menu:
+**********************************
+ (1) Print the Database
+ (2) Lookup by ID
+ (3) Lookup by Last Name
+ (4) Add an Employee
+ (5) Quit
+**********************************
+Enter your option: 1
+----------------------------------------------
+ NAME                       SALARY      ID
+----------------------------------------------
+ Cathryn    Danner          72000     165417 
+ Matt       Meeden          69000     273225 
+ Robert     Dufour          91000     471163 
+ Dylan      Steinberg       84000     485913 
+ Mike       Griffin         72000     499959 
+ Daniel     McNamee         71000     547935 
+ Peter      Olsen           82000     553997 
+ Martine    Marshall        99000     633976 
+ Jean       Jones           94000     702234 
+ Dana       Parrish         87000     784372 
+ Ann        Coddington      82000     786785 
+ Melissa    Dufour         114000     849387 
+ Heather    James           98000     935460 
+ Russ       Vorobiev       109000     970016 
+----------------------------------------------
+**********************************
+Employee DB Menu:
+**********************************
+ (1) Print the Database
+ (2) Lookup by ID
+ (3) Lookup by Last Name
+ (4) Add an Employee
+ (5) Quit
+**********************************
+Enter your option: 2
+Enter a 6 digit employee id: 471163
+----------------------------------------------
+ NAME                       SALARY      ID
+ Robert     Dufour          91000     471163 
+----------------------------------------------
+**********************************
+Employee DB Menu:
+**********************************
+ (1) Print the Database
+ (2) Lookup by ID
+ (3) Lookup by Last Name
+ (4) Add an Employee
+ (5) Quit
+**********************************
+Enter your option: 3
+Enter Employee's last name (no extra spaces): Olsen
+----------------------------------------------
+ NAME                       SALARY      ID
+ Peter      Olsen           82000     553997 
+----------------------------------------------
+**********************************
+Employee DB Menu:
+**********************************
+ (1) Print the Database
+ (2) Lookup by ID
+ (3) Lookup by Last Name
+ (4) Add an Employee
+ (5) Quit
+**********************************
+Enter your option: 4
+Enter the first name of the employee: test
+Enter the last name of the employee: test
+Enter employee's salary (30000 to 150000): 40000
+do you want to add the following employee to the DB? 
+test test, salary: 40000 
+Enter 1 for yes, 0 for no: 1
+**********************************
+Employee DB Menu:
+**********************************
+ (1) Print the Database
+ (2) Lookup by ID
+ (3) Lookup by Last Name
+ (4) Add an Employee
+ (5) Quit
+**********************************
+Enter your option: 1
+----------------------------------------------
+ NAME                       SALARY      ID
+----------------------------------------------
+ Cathryn    Danner          72000     165417 
+ Matt       Meeden          69000     273225 
+ Robert     Dufour          91000     471163 
+ Dylan      Steinberg       84000     485913 
+ Mike       Griffin         72000     499959 
+ Daniel     McNamee         71000     547935 
+ Peter      Olsen           82000     553997 
+ Martine    Marshall        99000     633976 
+ Jean       Jones           94000     702234 
+ Dana       Parrish         87000     784372 
+ Ann        Coddington      82000     786785 
+ Melissa    Dufour         114000     849387 
+ Heather    James           98000     935460 
+ Russ       Vorobiev       109000     970016 
+ test       test            40000     970017 
+----------------------------------------------
+**********************************
+Employee DB Menu:
+**********************************
+ (1) Print the Database
+ (2) Lookup by ID
+ (3) Lookup by Last Name
+ (4) Add an Employee
+ (5) Quit
+**********************************
+Enter your option: 5
+goodbye!
+➜  solution_0403                                                                                                                                                                              solution_0403
